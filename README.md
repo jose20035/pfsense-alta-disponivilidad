@@ -1,4 +1,4 @@
-# pfsense-alta-disponivilidad
+# pfsense-alta-disponibilidad
 Proyecto de fin de grado
 
 ## Escenario 
@@ -77,21 +77,21 @@ Luego nos pedira el idioma del teclado, buscaremos spanish y probaremos las tecl
 
 Despues nos pedira que configuremos las particiones, aqui tenemos varias opciones, tenemos las opciones de auto particionado tanto para bios como para uefi la creara unicamente un particion / en el systema de archivos ufs y una linux swap.
 
-![install_4](./imagenes/install/install_4.png)
+![install_4_1](./imagenes/install/install_4_1.png)
 
 Pero tambine tenemos la opción de auto zsh la cual creara el mismo esquema de particiones pero con el sistema de archivos zfs el cual es mucho mas potente y nos ofrece nuevas configuraciones como la de crear raid.
 
-![install_5](./imagenes/install/install_5.png)
+![install_4](./imagenes/install/install_4.png)
 
 Por ultimo y no menos importante siempre podremos entrar en una configuración manual de las particiones.
 
-![install_6](./imagenes/install/install_6.png)
+![install_5](./imagenes/install/install_5.png)
 
 Una vez configurado todo esto pararemos a la instalación, una de las cosas que mas me ha sorprendido de pfsense es que se instala en menos de 5 minutos puesto que es un software que pesar de tener muchas funcionalidades es muy liviano.
 
 Tras la instalación nos encontraremos con una pestaña la cual nos pedirá reiniciar o nos ofrecerá un shell para poder configurar cualquier detalle a mano.
 
-![install_7](./imagenes/install/install_7.png)
+![install_6](./imagenes/install/install_6.png)
 
 Tras reiniciar nos encontraremos que automáticamente a configurado la primera red como WAN y la segunda como Lan.
 Esto es un problema puesto que desde la Wan no tenemos reglas creadas para poder acceder a la web de pfsense donde terminaremos la configuración.
@@ -112,25 +112,27 @@ Una vez creadas estas reglas podremos acceder a la pagina de configuración de p
 Lo primero que encontramos es una bienvenida y algunas políticas.
 pulsaremos siguiente y seguiremos.
 
-![install_8](./imagenes/install/install_8.png)
+![install_7](./imagenes/install/install_7.png)
 
 Aquí configuraremos el nombre y el dominio.
 
-![install_9](./imagenes/install/install_9.png)
+![install_8](./imagenes/install/install_8.png)
 
 Luego configuraremos el servidor de hora.
 
-![install_10](./imagenes/install/install_10.png)
+![install_9](./imagenes/install/install_9.png)
 
 Después podremos configurar la interfaz wan, nosotros la dejaremos por defecto.
 
-![install_11](./imagenes/install/install_11.png)
+![install_10](./imagenes/install/install_10.png)
 
 Por ultimo nos pedirá que cambiemos la contraseña del administrador puesto que por defecto es "pfsense".
 
-![install_12](./imagenes/install/install_12.png)
+![install_11](./imagenes/install/install_11.png)
 
 Aquí tendremos un resumen de la instalación y si queremos buscar alguna actualización, tras esto el pfsense se reiniciara de nuevo y ya tendremos instalado nuestro primer pfsense.
+
+![install_12](./imagenes/install/install_12.png)
 
 Recordemos que para configurar lo en alta disponibilidad necesitaremos como mínimo otro mas.
 
