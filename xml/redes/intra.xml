@@ -1,0 +1,8 @@
+<network>
+  <name>intra</name>
+  <uuid>4f327ba5-e5d7-4291-aba5-e5aaa2e6b1cc</uuid>
+  <bridge name='virbr20' stp='on' delay='0'/>
+  <mac address='52:54:00:a6:06:16'/>
+  <ip address='10.10.20.1' netmask='255.255.255.0'>
+  </ip>
+</network>

@@ -1,0 +1,22 @@
+<domain type="kvm">
+  <name>db</name>
+  <memory unit="G">1</memory>
+  <vcpu>1</vcpu>
+  <os>
+    <type arch="x86_64">hvm</type>
+    <boot dev='hd'/>
+  </os>
+  <devices>
+    <emulator>/usr/bin/kvm</emulator>
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='qcow2'/>
+      <source file='/home/jose/MVs/kvm/images/db.qcow2'/>
+      <target dev='vda'/>
+    </disk>
+    <interface type="network">
+      <source network="intra"/>
+      <mac address="52:54:00:86:36:a9"/>
+    </interface>
+    <graphics type='vnc' port='-1' autoport='yes' listen='0.0.0.0' />
+  </devices>
+</domain>

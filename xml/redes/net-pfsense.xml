@@ -1,0 +1,8 @@
+<network>
+  <name>net-pfsense</name>
+  <uuid>1d616456-4bb4-4fb1-8f6d-43637ad17328</uuid>
+  <bridge name='virbr18' stp='on' delay='0'/>
+  <mac address='52:54:00:a6:16:09'/>
+  <ip address='10.10.0.1' netmask='255.255.255.0'>
+  </ip>
+</network>
